@@ -133,7 +133,7 @@ nav footer #SairConta:hover {
 }
 
 /*Fim do CSS lateral*/
-main#Corpo section#Conteudo {
+main#Mainline section#Conteudo {
     border: 1px solid black;
     width: 1070px;
     height: 798px;
@@ -151,6 +151,11 @@ section#Conteudo div {
     text-align: center;
     width: 100%;
     height: 100%;
+    box-shadow: 7px 10px gray;
+}
+
+section#Conteudo div header {
+    margin: 1rem;
 }
 
 section#Conteudo div header input#barraPesquisa {
@@ -167,6 +172,12 @@ section#Conteudo div header button {
     padding-right: 1rem;
     border-radius: 5px;
     border: 1px solid black;
+    background-color: #4f36f3;
+}
+
+section#Conteudo div header button:hover {
+    box-shadow: 2px 2px gray;
+    cursor: pointer;
 }
 
 section#Conteudo div .certificado {
@@ -178,6 +189,11 @@ section#Conteudo div .certificado {
     border-radius: 5px;
     background-color: #F1F1F1;
     align-items: baseline;
+}
+
+section#Conteudo div .certificado:hover {
+    background-color: rgb(179, 179, 179);
+    cursor: pointer;
 }
 
 #historico {

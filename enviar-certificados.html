@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="enviar-certificados.css">
     <title>Enviar Certificados</title>
 </head>
 
@@ -18,7 +18,7 @@
     <body>
         <!--Cabeçalho de Logo da UVV-->
         <header id="Cabecalho">
-            <img src="/Frontend/img/logo_uvv.png" alt="LogoUVV" id="LogoUVV">
+            <img src="logo_uvv.png" alt="LogoUVV" id="LogoUVV">
         </header>
         <main id="Mainline">
 
@@ -26,7 +26,7 @@
             <nav id="BarraLateral">
                 <!--Foto e nome do aluno-->
                 <section id="Aluno">
-                    <img class="ImgFotoAluno" src="/Frontend/img/icone_aluno.png" alt="Foto_Aluno">
+                    <img class="ImgFotoAluno" src="icone_aluno.png" alt="Foto_Aluno">
                     <p>Nome_do_Aluno</p>
                 </section>
 
@@ -34,19 +34,19 @@
                 <section id="Navegacao">
                     <ul>
                         <li>
-                            <img src="/Frontend/img/icone_casa.png" alt="icone_casa">
-                            <a class="link_navegacao" href="/Frontend/dashboard-alunos/alunos.html">Dashboard</a>
+                            <img src="icone_casa.png" alt="icone_casa">
+                            <a class="link_navegacao" href="visualizar-certificados.html">Dashboard</a>
                         </li>
 
                         <li>
-                            <img src="/Frontend/img/icone_enviar.png" alt="icone_enviar">
-                            <a class="link_navegacao" href="/Frontend/enviar-certificados/index.html">Validar
+                            <img src="icone_enviar.png" alt="icone_enviar">
+                            <a class="link_navegacao" href="visualizar-certificados.html">Vizualizar
                                 Certificados</a>
                         </li>
 
                         <li>
-                            <img src="/Frontend/img/icone_pasta.png" alt="icone_pasta">
-                            <a class="link_navegacao" href="/Frontend/dashboard-alunos/alunos.html">Histórico de
+                            <img src="icone_pasta.png" alt="icone_pasta">
+                            <a class="link_navegacao" href="index.html">Histórico de
                                 Envios</a>
                         </li>
 
@@ -54,8 +54,10 @@
                 </section>
 
                 <footer>
-                    <img src="/Frontend/img/simbolo_de_aluno.png" alt="Icone aluno">
-                    <p>Você está logado como aluno. <span id="SairConta">Sair?</span></p>
+                    <img src="simbolo_de_aluno.png" alt="Icone aluno">
+                    <p>Você está logado como aluno. <span href="dashboard-coordenador.html"
+                            id="SairConta">Trocar?</span>
+                    </p>
                 </footer>
             </nav>
             <!--Fim do menu lateral-->
@@ -119,7 +121,12 @@
                 integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
                 crossorigin="anonymous">
                 </script>
-            <script src="FormInputs.js"></script>
+            <script src="enviar-certificados.js"></script>
+
+            <div class="icon-container">
+                <img src="iconeajuda.png" alt="Ícone" class="static-icon">
+            </div>
+
     </body>
 
     </html>

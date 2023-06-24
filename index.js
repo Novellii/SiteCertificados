@@ -1,4 +1,4 @@
-var requestURL = '/Frontend/certificados.json';
+var requestURL = 'certificados.json';
 
 var request = new XMLHttpRequest();
 
@@ -14,14 +14,10 @@ request.onload = function () {
 
 function formatText(jsonObj) {
     let text = '';
-  
+
     for (let prop in jsonObj) {
-      text += prop + ': ' + jsonObj[prop] + '<br>   ';
-      if(prop.indexOf(prop) % 2) {
-        return text + '<br>';
-      }
+        text += prop + ': ' + jsonObj[prop] + '<hr>   ';
     }
-  
     return text;
 }
 
@@ -34,7 +30,7 @@ function showHistorico(jsonObj) {
         certificateDiv.className = 'certificado';
 
         const certificateImg = document.createElement('img');
-        certificateImg.src = '/Frontend/img/verificado_caixa.png';
+        certificateImg.src = 'verificado_caixa.png';
         certificateImg.alt = 'Certificado';
         certificateImg.className = 'caixas';
 
@@ -46,16 +42,15 @@ function showHistorico(jsonObj) {
         certificateDiv.appendChild(certificateName);
 
         for (let prop in certificado) {
-            if (prop !== 'nome') {
+            if (prop !== 'nome' || prop === 1) {
                 const infoParagraph = document.createElement('p');
                 infoParagraph.className = 'certificate-info'
                 infoParagraph.textContent = `${prop}: ${certificado[prop]}`;
                 certificateDiv.appendChild(infoParagraph);
                 infoParagraph.innerHTML = formatText(certificado);
-                
+
             }
         }
-
         historic.appendChild(certificateDiv);
     });
 }

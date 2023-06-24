@@ -1,4 +1,4 @@
-var requestURL = '/Frontend/certificados.json';
+var requestURL = 'certificados.json';
 
 var request = new XMLHttpRequest();
 

@@ -132,7 +132,6 @@ main#Mainline section#Conteudo {
     width: 80%;
     height: 100%;
     margin: 4rem;
-    margin-top: 2rem;
     margin-bottom: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #b4b4b4;
@@ -141,10 +140,25 @@ main#Mainline section#Conteudo {
     padding-right: 0;
 }
 
-section#Conteudo div {
+section#Conteudo {
+    display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+section#Conteudo div {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
     width: 100%;
     height: 100%;
+    height: auto;
+}
+
+section#Conteudo div .certificado {
+    box-shadow: 7px 10px gray;
 }
 
 section#Conteudo div header {
@@ -194,15 +208,12 @@ section#Conteudo div .certificado:hover {
 }
 
 section#Conteudo div img.caixas {
-    padding-top: 9px;
     padding-left: 11px;
 }
 
 section#Conteudo div#historico {
     position: relative;
 }
-
-
 
 .caixas {
     padding-top: 9px;
@@ -222,17 +233,13 @@ section#Conteudo div#historico {
 .certificado p {
     font-family: 'Ubuntu', sans-serif;
     position: absolute;
-    display: inline;
     display: flex;
     margin: 55px;
     color: #000;
     align-items: center;
-    justify-content: center;
-    left: 100px;
-}
-
-.certificado p :nth-child(2) {
-    margin: 10px;
+    justify-content: space-between;
+    left: 60px;
+    margin: 15px;
     padding: 10px;
 }
 
@@ -247,10 +254,22 @@ section#Conteudo div#historico {
     margin-bottom: 10px;
 }
 
-.certificado p {
-    margin: 5px 0;
-}
-
 .certificate-info {
     padding-bottom: 5px;
+}
+
+hr {
+    text-decoration: none;
+    border: #f2f2f2;
+}
+
+.icon-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.static-icon {
+    width: 50px;
+    height: 50px;
 }
